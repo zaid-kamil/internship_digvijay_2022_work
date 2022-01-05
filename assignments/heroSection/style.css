@@ -8,17 +8,17 @@
   top: 0;
   bottom: 0;
   z-index: -1;
+  display: grid;
 }
-.container {
+.container-card {
   height: 80vh;
   width: 100vw;
   color: white;
-  margin-top: 5%;
+  margin-top: 2.7%;
   margin-left: 35%;
-  align-items: center;
-  justify-content: center;
   position: fixed;
   padding-top: 4%;
+  display: grid;
 }
 .h2-text,
 .h3-text,
@@ -28,17 +28,18 @@
 .h2-text {
   font-size: 3rem;
   margin-left: -1.7%;
+  margin-top: 2%;
 }
 .h3-text {
-  margin-top: -2%;
   font-size: 1.7rem;
   padding-bottom: 1.5%;
   margin-left: -1%;
+  margin-top: -3%;
 }
 .h4-text {
   font-size: 1.3rem;
-  margin-top: -1%;
   width: 45%;
+  margin-top: -2.5%;
   text-decoration: none;
   transition: all 0.2s;
 }
@@ -49,11 +50,17 @@ i {
   color: goldenrod;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 450px) {
   #background-video {
-    display: none;
+    max-width: 100%;
+    min-height: fit-content;
+  }
+  .container-card{
+    min-height: fit-content;
+    width: auto;
   }
   body {
-    background-size: cover;
+    max-width: 100%;
+    height: auto;
   }
 }
