@@ -94,3 +94,9 @@ section {
   font-size: 12px;
   color: #666;
 }
+.swiper-button-next{
+  margin-left: 5px;
+}
+.swiper-button-prev{
+  margin-right: 5px;
+}

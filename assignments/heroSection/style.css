@@ -1,0 +1,56 @@
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  position: fixed;
+  left: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.container {
+  height: 80vh;
+  width: 100vw;
+  color: white;
+  margin-top: 5%;
+  margin-left: 35%;
+  position: fixed;
+}
+.h2-text,
+.h3-text,
+.h4-text {
+  font-family: Montserrat;
+}
+.h2-text {
+  font-size: 3rem;
+  margin-left: -1.7%;
+}
+.h3-text {
+  margin-top: -2%;
+  font-size: 1.7rem;
+  padding-bottom: 1.5%;
+  margin-left: -1%;
+}
+.h4-text {
+  font-size: 1.4rem;
+  margin-top: -1%;
+  width: 45%;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.h4-text:hover {
+  color: #01c9ca;
+}
+i {
+  color: goldenrod;
+}
+
+@media (max-width: 750px) {
+  #background-video {
+    display: none;
+  }
+  body {
+    background-size: cover;
+  }
+}
