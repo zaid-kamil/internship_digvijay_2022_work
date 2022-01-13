@@ -1,24 +1,27 @@
+.hero{
+  background-color: #000000;
+  z-index: -1;
+}
 #background-video {
   width: 100vw;
-  height: 100vh;
+
   object-fit: contain;
-  position: fixed;
+  position: absolute;
   left: 0;
   left: 0;
   top: 0;
   bottom: 0;
-  z-index: -1;
+  z-index: 1;
   display: grid;
 }
 .container-card {
   height: 80vh;
-  width: 100vw;
-  color: white;
-  margin-top: 2.7%;
+  color: white;;
   margin-left: 35%;
-  position: fixed;
+  position: absolute;
   padding-top: 4%;
   display: grid;
+  z-index: 123;
 }
 .h2-text,
 .h3-text,
@@ -38,7 +41,6 @@
 }
 .h4-text {
   font-size: 1.3rem;
-  width: 45%;
   margin-top: -2.5%;
   text-decoration: none;
   transition: all 0.2s;
