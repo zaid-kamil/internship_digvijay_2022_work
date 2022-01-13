@@ -22,11 +22,11 @@ body{
     grid-gap: 10px;
 }
 .container .box{
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
     padding: 20px;
     display: grid;
     font-size: 24px;
-    /* place-items: center; */
+    place-items: center;
     text-align: center;
     color: #fff;
     transform: 0.5s;
@@ -59,6 +59,7 @@ body{
     background: url("/assignments/5_pages/assets/DM.jpg");
     background-size: cover;
 }
+
 .container .box:nth-child(3):hover{
     background: url("/assignments/5_pages/assets/eventM.jpg");
     background-size: cover;
