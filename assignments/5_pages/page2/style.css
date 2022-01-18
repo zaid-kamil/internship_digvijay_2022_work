@@ -17,7 +17,7 @@ body{
     display: grid;
     grid-template-columns: 50% 25% 25%;
     grid-template-rows:  50% 50%;
-    margin: 40px;
+    /* margin: 40px; */
     grid-auto-flow: dense;
     grid-gap: 0;
 }
