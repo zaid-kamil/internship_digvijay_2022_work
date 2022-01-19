@@ -4,7 +4,8 @@
     margin: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 100px;
 }
 .option_list{
     display: flex;
@@ -16,7 +17,8 @@
     height: 550px;
     background-position: center;
     border-radius: 50px;
-    margin: 15px;background-size: contain;
+    margin: 15px;
+    background-size: contain;
 
     box-shadow: 0 0 10px -1px rbga(255, 255, 255, 1);
 
