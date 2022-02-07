@@ -127,18 +127,21 @@
             const dm = document.querySelector('#dm');
             const sp = document.querySelector('#sp');
             const em = document.querySelector('#em');
-            
+
             dm.addEventListener('mouseenter',function(){
                 dm.style.width = '600px';
                 it.style.width = '9rem';
                 sp.style.width = '9rem';
                 em.style.width = '9rem';
+            optName.style.transform = 'rotate(0deg)';
             })
             it.addEventListener('mouseenter',function(){
                 dm.style.width = '9rem';
                 sp.style.width = '9rem';
                 em.style.width = '9rem';
                 it.style.width = '600px';
+            optName.style.transform = 'rotate(-90deg)';
+
             })
             sp.addEventListener('mouseenter',function(){
                 dm.style.width = '9rem';
