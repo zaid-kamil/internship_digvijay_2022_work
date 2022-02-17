@@ -1,14 +1,13 @@
 body{
     overflow-x: hidden;
 }
-    #vanta-canvas{
+.hero{
     width: 100%;
     height: 95vh;
     margin: -10px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    padding-left: 100px;
+    justify-content: center;
     overflow-x: hidden;
     background: linear-gradient(to right, #434343 0%, black 100%);
 }
@@ -79,6 +78,22 @@ body{
     margin-left: 20%;
 }
 
-@media only screen and ( max-width:480px ){
-    
+@media screen and ( max-width:768px ){
+    .hero{
+        margin: 0;
+        padding: 0;
+    }
+    .option_list{
+        flex-direction: column;
+    }
+    .options{
+        width: 400px;
+        height: 100px;
+        max-width: 400px;
+        margin-left: -80px;
+    }
+    .options:hover{
+        width: fit-content;
+        height: 200px;
+    }
 }
