@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+
+            <img src="/assignments/webDevCard/assests/react.png" alt="main image" id="frontImg">
+            <img src="/assignments/webDevCard/assests/angular.png" alt="main image" id="backImg">
+
+            <div class="product-inner" id="productBox">
+                <div class="product-front">
+                    <div class="product-top">
+                        <h1>REACT</h1>
+                    </div>
+                    <div class="product-bottom">
+                        <p>React is the most used tech. for website development, 
+                            and have the largest online community and contantly growing community.
+                         And it is managed by facebook</p>
+                        <h2>MERNSTACK</h2>
+                        <div class="color-select">
+                            <div class="select-item">
+                                <img src="/assignments/webDevCard/assests/angular.png" alt="icon" onclick="flipRight()">
+                            </div>
+                            <div class="select-item">
+                                <img src="/assignments/webDevCard/assests/react.png" alt="icon">
+                            </div>
+                            
+                            <!-- <div class="select-item">
+                                <img src="/assignments/webDevCard/assests/django.png" alt="icon" >
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="product-back">
+                    <div class="product-top2">
+                        <h1>ANGULAR</h1>
+                    </div>
+                    <div class="product-bottom">
+                        <p>Angular is to best way to build large sacle e-com website. Managed by Google</p>
+                        <h2>MEANSTACK</h2>
+                        <div class="color-select">
+                            <div class="select-item">
+                                <img src="/assignments/webDevCard/assests/angular.png" alt="icon" >
+                            </div>
+                            <div class="select-item">
+                                <img src="/assignments/webDevCard/assests/react.png" alt="icon" onclick="flipLeft()">
+                            </div>
+                            
+                            <!-- <div class="select-item">
+                                <img src="/assignments/webDevCard/assests/django.png" alt="icon" >
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="left-side"></div>
+                <div class="right-side"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var productBox = document.getElementById("productBox");
+        var frontImg = document.getElementById("frontImg");
+        var backImg = document.getElementById("backImg");
+
+        function flipRight(){
+            productBox.style.transform = "rotateY(180deg)";
+            frontImg.style.left = "650px";
+            backImg.style.left = "70px";
+            frontImg.style.transform = "rotate(-30deg)";
+            backImg.style.transform = "rotate(0)";
+        }
+
+        function flipLeft(){
+            productBox.style.transform = "rotateY(0deg)";
+            frontImg.style.left = "70px";
+            backImg.style.left = "-6500px";
+            frontImg.style.transform = "rotate(0deg)";
+            backImg.style.transform = "rotate(-30)";
+        }
+
+    </script>
+</body>
+</html>
